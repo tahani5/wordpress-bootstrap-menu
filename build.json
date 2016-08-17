@@ -1,0 +1,11 @@
+{
+	"js" : [
+		"dist/js/wordpress-bootstrap-menu.js"
+	],
+	"css": [
+		"dist/css/wordpress-bootstrap-menu.css"
+	],
+	"css-rtl": [
+		"dist/css/wordpress-bootstrap-menu-rtl.css"
+	]
+}
