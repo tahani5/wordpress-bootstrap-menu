@@ -1,0 +1,38 @@
+.nav ul {min-width: 200px;padding:0;margin:0;list-style: none;font-size: 14px;background-color: #ffffff;border: 1px solid #cccccc;border: 1px solid rgba(0, 0, 0, 0.15);border-radius: 4px;-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);background-clip: padding-box;display: none;list-style: outside none none;position: absolute;left: 100%;top: -1px;z-index: 1;}
+.nav > li {border-bottom: none !important;display:inline;}
+.nav li {border-bottom: 1px solid #ddd;}
+.nav a {display: block;padding: 10px 5px;color:#333;}
+.nav li > a:after {content: " ";display:inline-block;width:8px;height:8px;border-left:1px solid #000;border-bottom:1px solid #000;margin-left: 10px;padding-top: 0px;transform:rotate(45deg);position: relative;right: 15px;}
+.nav li > a:only-child:after {content: "";border:0;}
+.nav > li > a:after {content: " " !important;display:inline-block;float: left;width:8px;height:8px;border-left:1px solid #000;border-bottom:1px solid #000;font-family: FontAwesome;font-size: 12px;position: relative;right: 10px;top: 3px;transform:rotate(-45deg);}
+.nav > li > a:only-child:after {content: "" !important;display:none;}
+.ltr .nav > li > a:after{float:right;left:0px;right:auto;}
+.ltr .nav li > a:after{left:0;right:auto;transform:rotate(-135deg);}
+.ltr .nav > li > a:after{transform:rotate(-45deg)}
+.navbar-toggle .icon-bar{background:#333 !important;}
+@media(max-width:768px){
+	.rtl .navbar-nav .open .dropdown-menu{padding-right:20px;}
+	.ltr .navbar-nav .open .dropdown-menu{padding-left:20px;}
+	.ltr .nav li > a:after,.nav > li > a:after{left:0;right:auto;transform:rotate(-45deg) !important;}
+	.ltr .nav li > a:after{float:right}
+	.nav li > a:after{float:left;transform: rotate(-45deg);}
+	.dropdown.open > a{background:#ededed !important;}
+	.dropdown.open > a:focus{background:transparent;}
+}
+@media(min-width:768px){
+	.rtl .nav > li > ul {right:0px;top:50px;}
+	.rtl .dropdown-menu{right:100%;top:-15px;}
+	.rtl .nav > li > .dropdown-menu{right:0px;}
+	.nav > li > .dropdown-menu{top:100% !important;}
+	.nav li:hover > ul {display: block;}
+	.nav li {position: relative;}
+	.nav .open > .dropdown-menu{display:none;}
+	.nav .open > a{background:transparent;}
+	.nav .open:hover > .dropdown-menu{display:block;}
+	
+	
+	.ltr .nav > li > ul {left:0px;top:46px;}
+	.ltr .dropdown-menu{left:100%;top:-15px !important;}
+	.ltr .nav > li > .dropdown-menu{left:0px !important;}
+
+}
