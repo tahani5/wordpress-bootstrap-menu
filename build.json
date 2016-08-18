@@ -6,6 +6,7 @@
 		"dist/css/wordpress-bootstrap-menu.css"
 	],
 	"css-rtl": [
+		"dist/css/wordpress-bootstrap-menu.css",
 		"dist/css/wordpress-bootstrap-menu-rtl.css"
 	]
 }
